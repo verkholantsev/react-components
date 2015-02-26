@@ -7,6 +7,8 @@ var autoprefixer = require('gulp-autoprefixer');
 var base64 = require('gulp-base64');
 var concat = require('gulp-concat');
 
+gulp.task('default', ['css', 'js']);
+
 gulp.task('js', function () {
     gulp.src('./index.js')
         .pipe(browserify({
