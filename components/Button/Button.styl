@@ -1,0 +1,67 @@
+.button_size_s
+    font-size 13px
+    line-height 24px
+
+.button_size_m
+    font-size 13px
+    line-height 28px
+
+.button_size_l
+    font-size 15px
+    line-height 32px
+
+.button_size_xl
+    font-size 18px
+    line-height 38px
+
+.button_theme_islands
+    &.button_size_s .button__text
+        margin 0 10px
+
+    &.button_size_m .button__text
+        margin 0 13px
+
+    &.button_size_l .button__text
+        margin 0 15px
+
+    &.button_size_xl .button__text
+        margin 0 18px
+
+.button_theme_islands
+    font-family Arial, Helvetica, sans-serif
+    position relative
+    display inline-block
+    margin 0
+    padding 0
+    user-select none
+    color #000
+    border 0
+    border-radius 3px
+    outline 0
+    background rgba(0, 0, 0, .2)
+    text-align center
+    white-space nowrap
+
+.button_theme_islands:before
+    position absolute
+    top 1px
+    right 1px
+    bottom 1px
+    left 1px
+    content ''
+    border-radius 2px
+    background #FFF
+
+.button_theme_islands .button__text
+    position relative
+    display inline-block
+    overflow hidden
+    text-overflow ellipsis
+    vertical-align top
+
+.button_theme_islands.button_pressed:before
+    background #F6F5F3;
+
+.button_theme_islands.button_hovered
+    cursor pointer
+    background rgba(0, 0, 0, .3)
