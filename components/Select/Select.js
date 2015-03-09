@@ -2,7 +2,7 @@
 
 import React from 'react';
 
-export default class select extends React.componenets {
+export default class select extends React.Component {
     _onChange() {
         var actionChanged = this.props.actionChanged;
         var value = this.refs.control.getDOMNode().value.trim();
