@@ -2,7 +2,7 @@
 
 import React from 'react';
 
-export default class Select extends React.componenets {
+export default class select extends React.componenets {
     _onChange() {
         var actionChanged = this.props.actionChanged;
         var value = this.refs.control.getDOMNode().value.trim();
@@ -18,9 +18,9 @@ export default class Select extends React.componenets {
         });
 
         return (
-            <Select className='select' name={this.props.name} onChange={this._onChange.bind(this)}>
+            <select className='select' name={this.props.name} onChange={this._onChange.bind(this)}>
                 {options}
-            </Select>
+            </select>
         );
     }
 }
