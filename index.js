@@ -4,7 +4,6 @@
 import React from 'react';
 import Button from './components/Button/Button';
 import FormField from './components/FormField/FormField';
-import actionChanged from './actions/nameChanged';
 
 React.render(
     <div>
@@ -13,7 +12,8 @@ React.render(
         <Button theme='islands' size='l'/>
         <Button theme='islands' size='xl'/>
         <br/>
-        <FormField label='Form field' hint='Hint' actionChanged={actionChanged}/>
+        <FormField label='Form field' hint='Hint' type='Input' />
+        <FormField label='Form field' hint='Hint' type='Select' />
     </div>,
     document.body
 );
