@@ -27,7 +27,7 @@ export default class Input extends React.Component {
         var value = this.refs.control.getDOMNode().value.trim();
 
         if (actionChanged) {
-            this.props.actionChanged({value});
+            this.props.actionChanged(value);
         }
     }
 }
