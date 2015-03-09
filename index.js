@@ -13,7 +13,7 @@ React.render(
         <Button theme='islands' size='xl'/>
         <br/>
         <FormField label='Form field' hint='Hint' type='Input' />
-        <FormField label='Form field' hint='Hint' type='Select' />
+        <FormField label='Form field' hint='Hint' type='Select' options={[{label: 'yo', value: 'yo'}, {label: 'man', value: 'man'}]} />
     </div>,
     document.body
 );
