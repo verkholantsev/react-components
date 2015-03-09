@@ -16,6 +16,9 @@ export default class FormField extends React.Component {
                         actionChanged={this.props.actionChanged}
                     />
                 </div>
+                <div className='form-field__error'>
+                    {this.props.error}
+                </div>
             </div>
         );
     }
