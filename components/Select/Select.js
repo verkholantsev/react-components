@@ -13,12 +13,12 @@ export default class Select extends React.Component {
     }
 
     render() {
-        let options = this.props.options.map(function (option) {
+        let options = (this.props.options || []).map(function (option) {
             return (<option value={option.value}>{option.label}</option>);
         });
 
         return (
-            <select className='select' name={this.props.name} onChange={this._onChange.bind(this)}>
+            <select className='select' name={this.props.name} onChange={this._onChange.bind(this)} ref='control'>
                 {options}
             </select>
         );

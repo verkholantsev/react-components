@@ -29,6 +29,7 @@ export default class FormField extends React.Component {
                     <Component
                         hint={this.props.hint}
                         actionChanged={this.props.actionChanged}
+                        options={this.props.options}
                     />
                 </div>
                 <div className='form-field__error'>
