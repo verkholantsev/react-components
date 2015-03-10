@@ -28,13 +28,20 @@ export default class Button extends React.Component {
                 onMouseUp={this._onMouseUp.bind(this)}
                 onMouseEnter={this._onMouseEnter.bind(this)}
                 onMouseLeave={this._onMouseLeave.bind(this)}
+                onClick={this._onClick.bind(this)}
             >
-
                 <span className="button__text">
-                    I am button
+                    {this.props.label}
                 </span>
             </button>
         );
+    }
+
+    _onClick() {
+        let onClick = this.props.onClick;
+        if (onClick) {
+            onClick();
+        }
     }
 
     _onMouseDown() {
